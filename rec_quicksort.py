@@ -1,4 +1,4 @@
-l = [32, 324 , 2, 234, 0, 234323]
+l = [7,6,4,3432,23,2,1]
 def quicksort(l):
     if len(l) <= 1:
         return l
@@ -16,7 +16,7 @@ def quicksort(l):
         else:
             middle.append(l[i])
 
-    return quicksort(left) + middle + quicksort(right)
+    return quicksort(left) + quicksort(middle) + quicksort(right)
 
 l = quicksort(l)
 print(l)
