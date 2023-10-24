@@ -12,4 +12,4 @@ def binary(l, number):
         return binary(l[:mid:], number)
     else:
         return binary(l[mid::], number)
-print(binary(l, number)
+print(binary(l, number))
